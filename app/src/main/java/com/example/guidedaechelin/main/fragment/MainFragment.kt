@@ -1,6 +1,7 @@
 package com.example.guidedaechelin.main.fragment
 
 import android.util.Log
+import android.view.View
 import androidx.navigation.fragment.findNavController
 import com.example.guidedaechelin.R
 import com.example.guidedaechelin.base.BaseFragment
@@ -13,25 +14,15 @@ import retrofit2.Response
 
 class MainFragment : BaseFragment<FragmentMainBinding>(R.layout.fragment_main)  {
 
-//    override fun start() {
-////        val length = binding.breakfastMenu.length() / 18
-////        for(i: Int in 1..length){
-////            binding.breakfastMenu.
-////        }
-//
-//
-//    }
-
     override fun start() {
 
         getMeal()
 
 //        binding.txt.setOnClickListener {
-//
-//            findNavController().navigate(R.id.action_mainFragment_to_mealFragment)
-//
-//        }
 
+//            findNavController().navigate(R.id.action_mainFragment_to_mealFragment)
+
+//        }
 
 
     }
