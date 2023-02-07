@@ -12,5 +12,4 @@ data class Data (
     val breakfast : String,
     val dinner : String,
     val lunch : String
-
 )

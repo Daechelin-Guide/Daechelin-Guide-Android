@@ -18,12 +18,11 @@ class MainFragment : BaseFragment<FragmentMainBinding>(R.layout.fragment_main)  
 
         getMeal()
 
-        binding.txt.setOnClickListener {
+//        binding.txt.setOnClickListener {
 
-            findNavController().navigate(R.id.action_mainFragment_to_mealFragment)
+//            findNavController().navigate(R.id.action_mainFragment_to_mealFragment)
 
-        }
-
+//        }
 
 
     }
@@ -39,7 +38,10 @@ class MainFragment : BaseFragment<FragmentMainBinding>(R.layout.fragment_main)  
             override fun onResponse(call: Call<MealResponseData>, response: Response<MealResponseData>) {
                 Log.d("성공", "onResponse: ${response.body()}")
 
-                binding.txt.text = response.body()?.data?.dinner
+                binding.date.text = response.body()?.data?.date
+                binding.breakfastMenu.text = response.body()?.data?.breakfast
+                binding.lunchMenu.text = response.body()?.data?.lunch
+                binding.dinnerMenu.text = response.body()?.data?.dinner
 
             }
 
