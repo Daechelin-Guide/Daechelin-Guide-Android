@@ -127,7 +127,6 @@
             app:srb_starHeight="40dp"
             app:srb_clickable="true"
             app:srb_numStars="5"
-            app:srb_rating="3.5"
             app:srb_clearRatingEnabled="true"
 
 

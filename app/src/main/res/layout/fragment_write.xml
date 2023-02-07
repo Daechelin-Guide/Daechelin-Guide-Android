@@ -5,6 +5,7 @@
 
     <data>
 
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -48,6 +49,7 @@
             app:srb_stepSize="0.5" />
 
         <EditText
+
             android:id="@+id/edit_txt"
             android:layout_width="0dp"
             android:layout_height="200dp"
