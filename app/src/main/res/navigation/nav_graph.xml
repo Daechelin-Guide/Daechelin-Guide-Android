@@ -18,5 +18,13 @@
         android:id="@+id/mealFragment"
         android:name="com.example.guidedaechelin.meal.fragment.MealFragment"
         android:label="MealFragment"
-        tools:layout="@layout/fragment_meal"/>
+        tools:layout="@layout/fragment_meal">
+        <action
+            android:id="@+id/action_mealFragment_to_writeFragment"
+            app:destination="@id/writeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/writeFragment"
+        android:name="com.example.guidedaechelin.main.fragment.WriteFragment"
+        android:label="WriteFragment" />
 </navigation>
