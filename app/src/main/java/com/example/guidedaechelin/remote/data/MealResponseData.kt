@@ -11,5 +11,6 @@ data class Data (
     val date : String,
     val breakfast : String,
     val dinner : String,
-    val lunch : String
+    val lunch : String,
+    val week : String
 )

@@ -2,7 +2,10 @@ package com.example.guidedaechelin.meal.data
 
 data class CommentData(
 
-    val id : Int,
-    val comment : String,
-    val rating : Float
+    val commentId : Int,
+    val message : String,
+    val date : String,
+    val menu : String,
+    val createdDate : String
+
 )

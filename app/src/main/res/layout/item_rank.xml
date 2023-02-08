@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <TextView
+            android:id="@+id/title_txt"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="1위 : 2023 / 7 / 23"
+            android:fontFamily="@font/notosanskr_bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/menu_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="쇠고기야채죽,*모닝빵크래미샌드위치,
+나박김치,허쉬초코크런치시리얼+우유,
+바나나"
+            android:fontFamily="@font/pretendard_medium"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+
+
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="100dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_txt" />
+
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="20dp"
+
+            android:background="@drawable/grey_line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

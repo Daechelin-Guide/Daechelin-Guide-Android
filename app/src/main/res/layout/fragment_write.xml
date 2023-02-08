@@ -20,10 +20,25 @@
 
             android:background="@drawable/arrow_icon"
 
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="40dp"
             android:layout_marginStart="15dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="리뷰 달기"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:letterSpacing="-0.05"
+
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/back_btn"
+            app:layout_constraintStart_toEndOf="@+id/back_btn"
+            app:layout_constraintTop_toTopOf="@+id/back_btn" />
 
         <com.willy.ratingbar.ScaleRatingBar
 

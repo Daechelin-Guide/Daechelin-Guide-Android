@@ -14,9 +14,9 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
-        <item name="android:fontFamily">@font/pretendard_semibold</item>
-    
+<!--    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">-->
+<!--        <item name="android:fontFamily">@font/pretendard_semibold</item>-->
+<!--    -->
     <style name="CustomRatingBar"    parent="Widget.AppCompat.RatingBar">
         <item name="android:progressDrawable">@drawable/custom_rating_bar</item>
         

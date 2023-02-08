@@ -12,7 +12,18 @@
         tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_mainFragment_to_mealFragment"
-            app:destination="@id/mealFragment" />
+            app:destination="@id/mealFragment"
+            app:exitAnim="@anim/anim_left_before"
+            app:enterAnim="@anim/anim_left_first"
+            app:popEnterAnim="@anim/anim_right_first"
+            app:popExitAnim="@anim/anim_right_before" />
+        <action
+            android:id="@+id/action_mainFragment_to_rankFragment"
+            app:destination="@id/rankFragment"
+            app:enterAnim="@anim/anim_left_first"
+            app:exitAnim="@anim/anim_left_before"
+            app:popEnterAnim="@anim/anim_right_first"
+            app:popExitAnim="@anim/anim_right_before" />
     </fragment>
     <fragment
         android:id="@+id/mealFragment"
@@ -22,10 +33,34 @@
         <action
             android:id="@+id/action_mealFragment_to_writeFragment"
             app:destination="@id/writeFragment"
-            app:enterAnim="@anim/nav_default_pop_enter_anim" />
+            app:enterAnim="@anim/anim_left_first"
+            app:exitAnim="@anim/anim_left_before"
+            app:popEnterAnim="@anim/anim_right_first"
+            app:popExitAnim="@anim/anim_right_before" />
+        <argument
+            android:name="mealType"
+            app:argType="com.example.guidedaechelin.main.data.MealTypeData" />
     </fragment>
     <fragment
         android:id="@+id/writeFragment"
         android:name="com.example.guidedaechelin.main.fragment.WriteFragment"
-        android:label="WriteFragment" />
+        android:label="WriteFragment"
+        tools:layout="@layout/fragment_write">
+        <argument
+            android:name="menu"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/rankFragment"
+        android:name="com.example.guidedaechelin.rank.fragment.RankFragment"
+        android:label="RankFragment"
+        tools:layout="@layout/fragment_rank">
+        <action
+            android:id="@+id/action_rankFragment_to_mealFragment"
+            app:destination="@id/mealFragment"
+            app:enterAnim="@anim/anim_left_first"
+            app:exitAnim="@anim/anim_left_before"
+            app:popEnterAnim="@anim/anim_right_first"
+            app:popExitAnim="@anim/anim_right_before" />
+    </fragment>
 </navigation>
